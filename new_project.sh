@@ -55,4 +55,4 @@ echo "#!/usr/bin/env bash" >> $PNAME/bin/start_notebook.sh
 echo "jupyter notebook --no-browser --port=8080" >> $PNAME/bin/start_notebook.sh
 chmod +x $PNAME/bin/start_notebook.sh
 
-
+echo "Done."
