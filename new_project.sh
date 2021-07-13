@@ -43,6 +43,7 @@ echo "data/" >> $PNAME/.gitignore
 echo "logs/" >> $PNAME/.gitignore
 echo "**/tags" >> $PNAME/.gitignore
 echo "tags" >> $PNAME/.gitignore
+echo "env/" >> $PNAME/.gitignore
 
 echo "Setting up Python..."
 python3 -m venv $PNAME/env
