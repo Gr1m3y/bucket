@@ -129,3 +129,6 @@ dmypy.json
 
 # tags files
 tags
+
+# idea folder
+.idea/
