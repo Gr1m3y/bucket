@@ -11,3 +11,4 @@ def test_counter(capfd):
         results[aa] = count
     assert(results["M"] == 37)
     assert(results["W"] == 7)
+    assert(results["N"] == 42)
