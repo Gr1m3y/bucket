@@ -10,8 +10,10 @@ def get_counts(faa_in):
         seq = seq.strip()
         all_proteins = f"{all_proteins}{seq}"
     counts = Counter(all_proteins)
+    total = sum(counts.values())
     for aa in counts:
-        print(f"{aa}\t{counts[aa]}")
+        proportion = counts[aa] / float(total)
+        print(f"{aa}\t{counts[aa]}\t{proportion:.3f}")
 
 
 def main():

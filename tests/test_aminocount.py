@@ -1,7 +1,7 @@
 from aminocount import aminocount
 
 
-def test_counter(capfd):
+def test_counter1(capfd):
     aminocount.get_counts("tests/data/sample.faa")
     out, err = capfd.readouterr()
     results = {}
@@ -12,3 +12,10 @@ def test_counter(capfd):
     assert(results["M"] == 37)
     assert(results["W"] == 7)
     assert(results["N"] == 42)
+
+def test_counter2(capfd):
+    aminocount.get_counts("tests/data/sample.faa")
+    out, err = capfd.readouterr()
+    for line in out.splitlines():
+        assert(len(line.split("\t")) == 3)
+        assert(float(line.split("\t")[2]) <= 1.0)

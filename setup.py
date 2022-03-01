@@ -15,6 +15,6 @@ setup(
         'pyfastx',
     ],
     entry_points={
-        'console_scripts': ['aminocount=aminocount:main', ],
+        'console_scripts': ['aminocount=aminocount:main', 'aminodist=aminodist:main'],
     }
 )
