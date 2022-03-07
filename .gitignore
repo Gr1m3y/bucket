@@ -132,3 +132,6 @@ tags
 
 # idea folder
 .idea/
+
+# junk folder for temp files
+temp/

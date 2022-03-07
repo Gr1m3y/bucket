@@ -13,6 +13,7 @@ setup(
     test_suite="tests",
     install_requires=[
         'pyfastx',
+        'matplotlib',
     ],
     entry_points={
         'console_scripts': ['aminocount=aminocount:main', 'aminodist=aminodist:main'],
